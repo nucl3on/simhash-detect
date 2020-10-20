@@ -6,18 +6,20 @@ Current Limitations:
 - Input File Size < 20 MB
 
 
-# USAGE:
-- python3 compare.py location/filename1.txt location/filename2.txt
+# Usage:
+- python3 simhash-detect.py  location/filename1.txt  location/filename2.txt
 
 For Usage Help Run,
-- python3 compare.py --help
+- python3 simhash-detect.py  --help
 
 # Sample Output:
 
 File1 hash.VALUE: 11859362079583617622
+
 File2 hash.VALUE: 9663724769906510421
 
 DISTANCE: 18 
+
 
 
 
