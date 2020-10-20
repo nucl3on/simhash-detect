@@ -2,12 +2,17 @@
 Detecting similar text files by calculating distance using simhash algorithm.
 
 Current Limitations:
-- Only text data can be processed (UTF-8) (.txt)
+- (UTF-8) text can only be processed
+- Only .txt files can be used with the script
 - Input File Size < 20 MB
 
 
 # Usage:
-- python3 simhash-detect.py	location/filename1.txt	location/filename2.txt
+If the files are in the same dir:
+- python3 simhash-detect.py file1 file2
+
+Else, specify file path
+- python3 simhash-detect.py path/file1 path/file2
 
 For Usage Help Run,
 - python3 simhash-detect.py  --help
@@ -15,6 +20,7 @@ For Usage Help Run,
 # Sample Output:
 
 File1 hash.VALUE: 11859362079583617622
+
 File2 hash.VALUE: 9663724769906510421
 
 DISTANCE: 18 
