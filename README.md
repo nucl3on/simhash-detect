@@ -3,7 +3,7 @@ Detecting similar text files by calculating distance using simhash algorithm.
 
 Current Limitations:
 - (UTF-8) text can only be processed
-- Only .txt files can be used with the script
+- Only text files can be used with the script
 - Input File Size < 20 MB
 
 
