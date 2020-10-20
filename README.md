@@ -7,7 +7,7 @@ Current Limitations:
 
 
 # Usage:
-- python3 simhash-detect.py  location/filename1.txt  location/filename2.txt
+- python3 simhash-detect.py	location/filename1.txt	location/filename2.txt
 
 For Usage Help Run,
 - python3 simhash-detect.py  --help
@@ -15,7 +15,6 @@ For Usage Help Run,
 # Sample Output:
 
 File1 hash.VALUE: 11859362079583617622
-
 File2 hash.VALUE: 9663724769906510421
 
 DISTANCE: 18 
@@ -23,5 +22,5 @@ DISTANCE: 18
 
 
 
-- Lesser distance value >> more similarity b/w files.
+- Lesser distance value means more similarity b/w files.
 - If the distance is 0, then the files are identical.
