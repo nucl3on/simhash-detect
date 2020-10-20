@@ -5,6 +5,6 @@ Current Limitations:
 - Only text data can be processed (UTF-8)
 - Input File Size < 20MB
 
-USAGE:
 
-# python3 compare.py txt_file1 txt_file2
+USAGE:
+- python3 compare.py txt_file1 txt_file2
