@@ -1,4 +1,6 @@
 import re
+#DEBUG
+#import traceback
 import argparse
 from simhash import Simhash
 
@@ -22,17 +24,18 @@ try:
     with open(clean2) as chunk:
         bytes2 = chunk.read()
 except:
-    print ("\nFile Not Found/Access Error!")
-    print ("Check your file name/location again.\n")
+    #DEBUG
+    #traceback.print_exc()
+    print ("\n\nFile Read Error/Not Found!")
+    print ("Check your file name/location again \n(or) check for invalid characters/bytes in the file(s).\n")
 else:
     hash1 = Simhash(bytes1)
     hash2 = Simhash(bytes2)
-    """DEBUG
-    print ("\nFile1 Obj:",hash1)
-    print ("File1 Features:",Simhash(get_features(bytes1)).value)
-    print ("File2 Obj:",hash2)
-    print ("File2 Features:",Simhash(get_features(bytes2)).value)
-    """
+    #DEBUG
+    #print ("\nFile1 Obj:",hash1)
+    #print ("File1 Features:",Simhash(get_features(bytes1)).value)
+    #print ("File2 Obj:",hash2)
+    #print ("File2 Features:",Simhash(get_features(bytes2)).value)
     print ("\nFile1 hash.VALUE:",hash1.value)
     print ("File2 hash.VALUE:",hash2.value)
     print ("\nDISTANCE:",hash1.distance(hash2),"\n")
