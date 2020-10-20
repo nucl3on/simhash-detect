@@ -2,11 +2,11 @@ import re
 import argparse
 from simhash import Simhash
 
-parser = argparse.ArgumentParser(description='Compare Similarity of Two Docs using Simhash -nucl3on',usage='%(prog)s file1-location file2-location')
+parser = argparse.ArgumentParser(description='Compare Similarity of Two Docs using Simhash.',usage='%(prog)s file1-location file2-location')
 parser.add_argument('File1Location', metavar="location1", type=str, nargs=1, help='Enter the location of the file1')
 parser.add_argument('File2Location', metavar="location2", type=str, nargs=1, help='Enter the location of the file2')
 args = parser.parse_args()
-# need to add path regex to clean user input.
+# need to add regex to clean user input.
 clean1 = args.File1Location[0]
 clean2 = args.File2Location[0]
 
